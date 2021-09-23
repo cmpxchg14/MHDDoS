@@ -62,7 +62,7 @@
 
 ## Downloads
 
-You can download from [GitHub Releases](https://github.com/MHProDev/MHDDoS/releases)
+You can download from [GitHub Releases](https://github.com/cmpxchg14/cfds/releases)
 
 ### Getting Started
 
@@ -90,7 +90,7 @@ You can download from [GitHub Releases](https://github.com/MHProDev/MHDDoS/relea
 **Clone and Install Script**
 
 ```console
-git clone https://github.com/cmpxchg14/MHDDoS.git
+git clone https://github.com/cmpxchg14/cfds.git
 cd MHDDoS
 pip3 install -r requirements.txt
 ```
