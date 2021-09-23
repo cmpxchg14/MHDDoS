@@ -1,4 +1,4 @@
-<h1 align="center">CDDOS (ex.mhddos) - Cloud DDoS Stress-Testing System With 44 Methods</h1>
+<h1 align="center">CFDS (ex.mhddos) - Cloud DDoS Stress-Testing System With 44 Methods</h1>
 
 <em><h5 align="center">(Code Lang - Python 3)</h5></em>
 
