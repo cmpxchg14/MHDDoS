@@ -1105,37 +1105,37 @@ def downloadsocks(choice):
     if choice == "4":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&country=all",
-                             timeout=5)
-            f.write(r.content)
-        except:
-            pass
-        try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks4", timeout=5)
-            f.write(r.content)
-        except:
-            pass
-        try:
-            r = requests.get("https://www.proxyscan.io/download?type=socks4", timeout=5)
+            r = requests.get(
+            "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4",
+                 timeout=5)
             f.write(r.content)
         except:
             pass
         try:
             r = requests.get(
-                "https://proxy-daily.com/api/getproxylist?apikey=3Rr6lb-yfeQeotZ2-9M76QI&format=ipport&type=socks4&lastchecked=60",
-                timeout=5)
+            "https://www.proxy-list.download/api/v1/get?type=socks4",
+                 timeout=5)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt", timeout=5)
+            r = requests.get(
+            "https://www.proxyscan.io/download?type=socks4",
+                 timeout=5)
+            f.write(r.content)
+        except:
+            pass
+        try:
+            r = requests.get(
+                "https://cyber-hub.pw/proxy.txt",
+                timeout=5)
             f.write(r.content)
             f.close()
         except:
             f.close()
         try:
 
-            req = requests.get("https://www.socks-proxy.net/", timeout=5, headers={"User-Agent", UserAgent}).text
+            req = requests.get("https://proxyscrape.com/share/up8mxal", timeout=5, headers={"User-Agent", UserAgent}).text
             part = str(req)
             part = part.split("<tbody>")
             part = part[1].split("</tbody>")
@@ -1155,13 +1155,23 @@ def downloadsocks(choice):
     if choice == "5":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all",
+            r = requests.get(
+            "https://ipvs.fra1.digitaloceanspaces.com/ipvs-17-09-2021.txt",
                              timeout=5)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5", timeout=5)
+            r = requests.get(
+            "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5",
+                    timeout=5)
+            f.write(r.content)
+        except:
+            pass
+        try:
+            r = requests.get(
+            "https://www.proxy-list.download/api/v1/get?type=socks5",
+                 timeout=5)
             f.write(r.content)
             f.close()
         except:
@@ -1173,20 +1183,8 @@ def downloadsocks(choice):
         except:
             pass
         try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt", timeout=5)
-            f.write(r.content)
-        except:
-            pass
-        try:
             r = requests.get(
-                "https://proxy-daily.com/api/getproxylist?apikey=3Rr6lb-yfeQeotZ2-9M76QI&format=ipport&type=socks5&lastchecked=60",
-                timeout=5)
-            f.write(r.content)
-        except:
-            pass
-        try:
-            r = requests.get(
-                "https://gist.githubusercontent.com/Azuures/1e0cb7a1097c720b4ed2aa63acd82179/raw/97d2d6a11873ffa8ca763763f7a5dd4035bcf95f/fwefnwex",
+                "https://cyber-hub.pw/proxy.txt",
                 timeout=5)
             f.write(r.content)
             f.close()
@@ -1195,31 +1193,31 @@ def downloadsocks(choice):
     if choice == "1":
         f = open(out_file, 'wb')
         try:
-            r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all",
+            r = requests.get(
+            "https://api.proxyscrape.com/?request=displayproxies&proxytype=http",
                              timeout=5)
             f.write(r.content)
         except:
             pass
         try:
-            r = requests.get("https://www.proxy-list.download/api/v1/get?type=http", timeout=5)
+            r = requests.get(
+            "https://www.proxy-list.download/api/v1/get?type=http",
+                    timeout=5)
             f.write(r.content)
             f.close()
-        except:
-            pass
-        try:
-            r = requests.get("https://www.proxyscan.io/download?type=http", timeout=5)
-            f.write(r.content)
-            f.close()
-        except:
-            pass
-        try:
-            r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt", timeout=5)
-            f.write(r.content)
         except:
             pass
         try:
             r = requests.get(
-                "https://proxy-daily.com/api/getproxylist?apikey=3Rr6lb-yfeQeotZ2-9M76QI&format=ipport&type=http&lastchecked=60",
+                  "https://www.proxyscan.io/download?type=http",
+                  timeout=5)
+            f.write(r.content)
+            f.close()
+        except:
+            pass
+        try:
+            r = requests.get(
+                "https://cyber-hub.pw/proxy.txt",
                 timeout=5)
             f.write(r.content)
             f.close()
